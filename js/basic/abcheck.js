@@ -3,3 +3,16 @@
 // in the string at least once (ie. "lane borrowed" would result in true
 // because there is exactly three characters between a and b).
 // Otherwise return false.
+
+function ABCheck(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "a" && str[i + 4] === "b") {
+      return true
+    }
+    return false
+  }
+}
+
+let phrase = "lane borrowed";
+
+ABCheck(phrase);
