@@ -18,5 +18,7 @@ let phrase = "lane borrowed";
 ABCheck(phrase);
 
 const ABChecker = (str) => {
-  str.test()
+  str.match(/a...b/g) !== null;
 }
+
+ABChecker(phrase)
