@@ -13,12 +13,10 @@ function ABCheck(str) {
   return false
 }
 
-let phrase = "lane borrowed";
+let phrase = "bun arrowed";
 
 ABCheck(phrase);
 
-const ABChecker = (str) => {
-  str.match(/a...b/g) !== null;
-}
+const ABChecker = (str) => str.match(/a...b/g) !== null || str.match(/b...a/g) !== null;
 
 ABChecker(phrase)
