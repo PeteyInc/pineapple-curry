@@ -6,13 +6,17 @@
 
 function ABCheck(str) {
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === "a" && str[i + 4] === "b") {
+    if (str[i] === "a" && str[i + 4] === "b" || str[i] === "b" && str[i + 4] === "a") {
       return true
     }
-    return false
   }
+  return false
 }
 
 let phrase = "lane borrowed";
 
 ABCheck(phrase);
+
+const ABChecker = (str) => {
+  str.test()
+}
