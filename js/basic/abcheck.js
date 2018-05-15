@@ -6,17 +6,17 @@
 
 function ABCheck(str) {
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === "a" && str[i + 4] === "b" || str[i] === "b" && str[i + 4] === "a") {
-      return true
+    if ((str[i] === "a" && str[i + 4] === "b") || (str[i] === "b" && str[i + 4] === "a")) {
+      return true;
     }
   }
-  return false
+  return false;
 }
 
 let phrase = "bun arrowed";
 
 ABCheck(phrase);
 
-const ABChecker = (str) => str.match(/a...b/g) !== null || str.match(/b...a/g) !== null;
+const ABChecker = str => str.match(/a...b/g) !== null || str.match(/b...a/g) !== null;
 
-ABChecker(phrase)
+ABChecker(phrase);
